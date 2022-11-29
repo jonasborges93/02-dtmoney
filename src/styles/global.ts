@@ -82,7 +82,13 @@ button{
     border-radius: 0.25rem;
 
     position: relative;
+}
 
+@media screen and (max-width:768px){
+    .react-modal-content{
+        width: 94%;
+        padding: 2rem 1rem;
+    }
 }
 
 .react-modal-close{
@@ -95,9 +101,13 @@ button{
 
     transition: filter 0.2s;
 
+    @media screen and (max-width:768px){
+        top: 1rem;
+        right: 1rem; 
+    }
+
     &:hover{
         filter: brightness(0.8);
     }
-
 }
 `

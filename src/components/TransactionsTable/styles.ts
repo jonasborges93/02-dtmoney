@@ -7,12 +7,29 @@ export const Container = styled.div`
         width: 100%;
         border-spacing: 0 0.5rem;
 
+        thead{
+            @media screen and (max-width:768px){
+                display: none;
+            }
+        }
+
         th{
             color: var(--text-body);
             font-weight: 400;
             padding: 1rem 2rem;
             text-align: left;
             line-height: 1.5rem;
+        }
+
+        tr{
+            @media screen and (max-width:768px){
+                display: flex;
+                flex-direction: column;
+
+                &:not(:last-child){
+                    margin-bottom: 0.8rem;
+                }
+            }
         }
 
         td{

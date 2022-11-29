@@ -6,6 +6,14 @@ export const Container = styled.div`
     gap: 2rem;
     margin-top: -10rem;
 
+    @media screen and (max-width: 1024px){
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    @media screen and (max-width:768px){
+        gap: 1rem;
+    }
+
     div{
         background-color: var(--shape);
         padding: 1.5rem 2rem;
